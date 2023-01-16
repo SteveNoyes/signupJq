@@ -4,11 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./app.css">
   <title>Sign Up Form</title>
 </head>
 <body>
   <div id="wrapper">
-    
-  </div>
+    <ol id="error-message">
+    </ol>
+    <form id="form" method="post">
+      <label for="name">Name<label>
+      <input id="name" class="form-control" name="name" type="text" placeholder="Your name" />
+  
+      <label for="email">Email<label>
+      <input id="email" class="form-control" name="email" type="text" placeholder="your@email.com" />
+        
+      <label for="phone">Phone<label>
+      <input id="phone" class="form-control" name="phone" type="text" placeholder="1234567890" />
+          
+      <label for="password">Password<label>
+      <input id="password" class="form-control" name="password" type="password" />
+        
+        <label for="password-conf">Confirm Password<label>
+      <input id="password-conf" class="form-control" name="passwordConf" type="password" />
+  
+      <input id="submit" class="btn btn-primary form-control" type="submit" value="Sign Up" />
+      <input id="reset" class="btn btn-danger form-control" type="reset" />
+    </form>
+    </div><!--wrapper-->
+    <script src="./app.js"></script>
 </body>
 </html>
